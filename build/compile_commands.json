@@ -1,0 +1,52 @@
+[
+{
+  "directory": "/home/mori/projects/mprpc/build/src",
+  "command": "/usr/bin/c++   -I/home/mori/projects/mprpc/src/include -I/home/mori/projects/mprpc/example  -g   -o CMakeFiles/mprpc.dir/mprpcapplication.cc.o -c /home/mori/projects/mprpc/src/mprpcapplication.cc",
+  "file": "/home/mori/projects/mprpc/src/mprpcapplication.cc"
+},
+{
+  "directory": "/home/mori/projects/mprpc/build/src",
+  "command": "/usr/bin/c++   -I/home/mori/projects/mprpc/src/include -I/home/mori/projects/mprpc/example  -g   -o CMakeFiles/mprpc.dir/mprpcconfig.cc.o -c /home/mori/projects/mprpc/src/mprpcconfig.cc",
+  "file": "/home/mori/projects/mprpc/src/mprpcconfig.cc"
+},
+{
+  "directory": "/home/mori/projects/mprpc/build/src",
+  "command": "/usr/bin/c++   -I/home/mori/projects/mprpc/src/include -I/home/mori/projects/mprpc/example  -g   -o CMakeFiles/mprpc.dir/rpcheader.pb.cc.o -c /home/mori/projects/mprpc/src/rpcheader.pb.cc",
+  "file": "/home/mori/projects/mprpc/src/rpcheader.pb.cc"
+},
+{
+  "directory": "/home/mori/projects/mprpc/build/src",
+  "command": "/usr/bin/c++   -I/home/mori/projects/mprpc/src/include -I/home/mori/projects/mprpc/example  -g   -o CMakeFiles/mprpc.dir/rpcprovider.cc.o -c /home/mori/projects/mprpc/src/rpcprovider.cc",
+  "file": "/home/mori/projects/mprpc/src/rpcprovider.cc"
+},
+{
+  "directory": "/home/mori/projects/mprpc/build/src",
+  "command": "/usr/bin/c++   -I/home/mori/projects/mprpc/src/include -I/home/mori/projects/mprpc/example  -g   -o CMakeFiles/mprpc.dir/mprpcchannel.cc.o -c /home/mori/projects/mprpc/src/mprpcchannel.cc",
+  "file": "/home/mori/projects/mprpc/src/mprpcchannel.cc"
+},
+{
+  "directory": "/home/mori/projects/mprpc/build/src",
+  "command": "/usr/bin/c++   -I/home/mori/projects/mprpc/src/include -I/home/mori/projects/mprpc/example  -g   -o CMakeFiles/mprpc.dir/mprpccontroller.cc.o -c /home/mori/projects/mprpc/src/mprpccontroller.cc",
+  "file": "/home/mori/projects/mprpc/src/mprpccontroller.cc"
+},
+{
+  "directory": "/home/mori/projects/mprpc/build/example/callee",
+  "command": "/usr/bin/c++   -I/home/mori/projects/mprpc/src/include -I/home/mori/projects/mprpc/example  -g   -o CMakeFiles/provider.dir/friendservice.cc.o -c /home/mori/projects/mprpc/example/callee/friendservice.cc",
+  "file": "/home/mori/projects/mprpc/example/callee/friendservice.cc"
+},
+{
+  "directory": "/home/mori/projects/mprpc/build/example/callee",
+  "command": "/usr/bin/c++   -I/home/mori/projects/mprpc/src/include -I/home/mori/projects/mprpc/example  -g   -o CMakeFiles/provider.dir/__/friend.pb.cc.o -c /home/mori/projects/mprpc/example/friend.pb.cc",
+  "file": "/home/mori/projects/mprpc/example/friend.pb.cc"
+},
+{
+  "directory": "/home/mori/projects/mprpc/build/example/caller",
+  "command": "/usr/bin/c++   -I/home/mori/projects/mprpc/src/include -I/home/mori/projects/mprpc/example  -g   -o CMakeFiles/consumer.dir/callfriendservice.cc.o -c /home/mori/projects/mprpc/example/caller/callfriendservice.cc",
+  "file": "/home/mori/projects/mprpc/example/caller/callfriendservice.cc"
+},
+{
+  "directory": "/home/mori/projects/mprpc/build/example/caller",
+  "command": "/usr/bin/c++   -I/home/mori/projects/mprpc/src/include -I/home/mori/projects/mprpc/example  -g   -o CMakeFiles/consumer.dir/__/friend.pb.cc.o -c /home/mori/projects/mprpc/example/friend.pb.cc",
+  "file": "/home/mori/projects/mprpc/example/friend.pb.cc"
+}
+]

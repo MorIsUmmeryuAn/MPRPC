@@ -1,0 +1,7 @@
+MySQL 
+boost 
+muduo 
+redis-server 
+hiredis（redis对应于C++的客户端变成语言） 
+protobuf 
+zookeeper 
