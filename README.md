@@ -5,4 +5,8 @@ Implement a distributed network communication framework
 ./provider -i test.conf
 ./consumer -i test.conf
 # 即可实现简单的通信
-# 日志系统正在实现ing
+# 异步日志系统已实现
+./provider -i test.conf
+# 查询日志
+cat xxx.txt
+# 进入zookeeper的应用
