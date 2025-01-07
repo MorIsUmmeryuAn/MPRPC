@@ -2,6 +2,7 @@
 #include"mprpcapplication.h"
 #include"rpcheader.pb.h"
 #include "logger.h"
+#include"zookeeperutil.h"
 
 /*
 service_name => service描述
@@ -51,7 +52,27 @@ void RpcProvider::Run(){
     //设置muduo库的线程数量
     server.setThreadNum(4);
 
-    // std::cout<<"启动 全部启动！"<<std::endl;
+    /*---------------------------------------------------------------------------------------------------------------------------------*/
+    //把当前rpc节点上要发布的服务全部注册到zk上 让rpc client可以从zk上发现服务
+    ZkClient ZkCli;
+    ZkCli.Start();
+    //service_name设为永久性节点 method_name为临时性节点
+    for(auto& sp: m_serviceMap){
+        // /service_name
+        std::string service_path = "/" + sp.first;
+        ZkCli.Create(service_path.c_str(),nullptr,0);
+        for(auto& mp : sp.second.m_methodMap){
+            // /service_name/method_name 存储当前这个rpc服务节点主机的ip和port
+            std::string method_path = service_path + "/" + mp.first;
+            char method_path_data[128] = {0};
+            sprintf(method_path_data,"%s:%d",ip.c_str(),port);
+            //ZOO_EPHEMERAL表示znode是临时性节点
+            ZkCli.Create(method_path.c_str(),method_path_data,strlen(method_path_data),ZOO_EPHEMERAL);
+        }
+    }
+    /*---------------------------------------------------------------------------------------------------------------------------------*/
+    
+    std::cout<<" 启动 全部启动！"<<" RpcProvider start service at ip: "<<ip<<" port: "<<port<<std::endl;
 
     //启动网络服务
     server.start();
